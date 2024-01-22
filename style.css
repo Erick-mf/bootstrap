@@ -1,15 +1,13 @@
 body {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: "Bebas Neue", sans-serif;
 }
 
 header {
-    background-image: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url(./img/header-img.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./img/header-img.jpg);
     background-size: cover;
     background-position: 50%;
     height: 90vh;
 }
-
-/* navbar */
 
 nav img {
     width: 13%;
@@ -26,8 +24,6 @@ nav img {
 .red-btn:hover {
     background: rgb(193, 17, 25);
 }
-
-/* hero section */
 
 .hero-title {
     font-size: 3rem;
@@ -49,7 +45,10 @@ form {
     width: 60%;
 }
 
-form #floatingInput {
+form #floatingInput,
+#inputEmail,
+#inputPassword,
+#floatingInput2 {
     color: #fff;
 }
 
@@ -59,11 +58,11 @@ form .form-control:focus {
     border-width: medium;
 }
 
-form .form-floating>.form-control:focus~label {
+form .form-floating > .form-control:focus ~ label {
     color: rgba(255, 255, 255, 0.7);
 }
 
-form .form-floating>.form-control:focus~label::after {
+form .form-floating > .form-control:focus ~ label::after {
     background-color: transparent;
 }
 
@@ -71,7 +70,10 @@ form .form-floating {
     width: 50%;
 }
 
-form #floatingInput {
+form #floatingInput,
+#inputEmail,
+#inputPassword,
+#floatingInput2 {
     background: transparent;
 }
 
@@ -92,15 +94,19 @@ form label {
     margin-left: 5px;
 }
 
-/* purple section */
-
 .purple-section {
     transform: translateY(-50%);
     width: 100%;
 }
 
 .purple-section .container-md {
-    background: radial-gradient(51.39% 511.66% at 47.68% -217.91%, #ff9900 0%, #e50914 17.27%, #0e1b4f 79.44%, #000413 100%);
+    background: radial-gradient(
+        51.39% 511.66% at 47.68% -217.91%,
+        #ff9900 0%,
+        #e50914 17.27%,
+        #0e1b4f 79.44%,
+        #000413 100%
+    );
     box-shadow: 0px -8px 25px rgba(0, 0, 0, 0.5);
     border-radius: 4px;
     margin: 0 74px;
@@ -137,8 +143,6 @@ form label {
     margin-left: 10px;
 }
 
-/* enjoy section */
-
 .section-title {
     font-size: 3rem;
     font-weight: 900;
@@ -154,8 +158,6 @@ form label {
     border-top: 5px solid #232323;
     border-bottom: 5px solid #232323;
 }
-
-/* faq section */
 
 .faq-section h3 {
     font-size: 1.25rem;
@@ -187,12 +189,12 @@ form label {
 }
 
 .faq-section .accordion-button:hover {
-    background-color: rgb(65,65,65);
+    background-color: rgb(65, 65, 65);
 }
 
 .faq-section .accordion-button:not(.collapsed) {
-    background-color: rgb(65,65,65);
-    color: rgb(255,255,255);
+    background-color: rgb(65, 65, 65);
+    color: rgb(255, 255, 255);
 }
 
 .faq-section .accordion-button::after {
@@ -210,8 +212,6 @@ form label {
     transform: none;
     content: "\00d7";
 }
-
-/* footer */
 
 footer {
     border-top: 5px solid #232323;
@@ -258,7 +258,6 @@ footer .arrow-down {
 }
 
 /* mobile */
-
 @media only screen and (max-width: 992px) {
     nav img {
         width: 17%;
